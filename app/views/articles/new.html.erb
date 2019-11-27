@@ -19,7 +19,8 @@
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit :class => "btn btn-secondary" %>
   </p>
+  <p><%= link_to 'Back to list of articles', articles_path, :class => "btn btn-secondary"  %></p>
 
 <% end %>
