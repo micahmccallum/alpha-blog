@@ -1,0 +1,142 @@
+$bgDefault      : #97d6e3;
+$bgHighlight    : #dc6ec8;
+$colDefault     : #ecf0f1;
+$colHighlight   : #ffbbbc;
+$dropDown       : false;
+.navbar {
+  background-color: $bgDefault;
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus {
+      color: $colHighlight; }}}
+  // .navbar-text {
+  //   color: $colDefault;
+  //   a {
+  //     color: $colHighlight;
+  //     &:hover, &:focus {
+  //       color: $colHighlight; }}}
+  // .navbar-nav {
+  //   .nav-link {
+  //     color: $colDefault;
+  //     border-radius: .25rem;
+  //     margin: 0 0.25em;
+  //     &:not(.disabled) {
+  //       &:hover, &:focus {
+  //         color: $colHighlight; }}}}}
+//     @if ($dropDown) {
+//       .dropdown-menu {
+//         background-color: $bgDefault;
+//         border-color: $bgHighlight;
+//         .dropdown-item {
+//           color: $colDefault;
+//           &:hover, &:focus, &.active {
+//             color: $colHighlight;
+//             background-color: $bgHighlight; }}
+//         .dropdown-divider {
+//           border-top-color: $bgHighlight; }}}
+//     .nav-item.active, .nav-item.show {
+//       .nav-link, .nav-link:hover, .nav-link:focus {
+//         color: $colHighlight;
+//         background-color: $bgHighlight; }}}
+//   .navbar-toggle {
+//     border-color: $bgHighlight;
+//     &:hover, &:focus {
+//       background-color: $bgHighlight; }
+//     .navbar-toggler-icon {
+//       color: $colDefault; }}
+//   .navbar-collapse,
+//   .navbar-form {
+//     border-color: $colDefault; }
+//   .navbar-link {
+//     color: $colDefault;
+//     &:hover {
+//       color: $colHighlight; }}}
+// @media (max-width: 575px) {
+//   .navbar-expend-sm .navbar-nav .show .dropdown-menu {
+//     .dropdown-item {
+//       color: $colDefault;
+//       &:hover, &:focus {
+//         color: $colHighlight; }}
+//     .dropdown-item.active {
+//       color: $colHighlight;
+//       background-color: $bgHighlight; }}}
+// @media (max-width: 767px) {
+//   .navbar-expend-md .navbar-nav .show .dropdown-menu {
+//     .dropdown-item {
+//       color: $colDefault;
+//       &:hover, &:focus {
+//         color: $colHighlight; }}
+//     .dropdown-item.active {
+//       color: $colHighlight;
+//       background-color: $bgHighlight; }}}
+// @media (max-width: 991px) {
+//   .navbar-expend-lg .navbar-nav .show .dropdown-menu {
+//     .dropdown-item {
+//       color: $colDefault;
+//       &:hover, &:focus {
+//         color: $colHighlight; }}
+//     .dropdown-item.active {
+//       color: $colHighlight;
+//       background-color: $bgHighlight; }}}
+// @media (max-width: 1199px) {
+//   .navbar-expend-xl .navbar-nav .show .dropdown-menu {
+//     .dropdown-item {
+//       color: $colDefault;
+//       &:hover, &:focus {
+//         color: $colHighlight; }}
+//     .dropdown-item.active {
+//       color: $colHighlight;
+//       background-color: $bgHighlight; }}}
+// .navbar-expend .navbar-nav .show .dropdown-menu {
+//   .dropdown-item {
+//     color: $colDefault;
+//     &:hover, &:focus {
+//       color: $colHighlight; }}
+//   .dropdown-item.active {
+//     color: $colHighlight;
+//     background-color: $bgHighlight; }}
+// $navbar-light-active-color:
+// $navbar-light-disabled-color:
+// $navbar-light-toggler-icon-bg:
+// $navbar-light-toggler-border-color:
+// $navbar-light-brand-color: #97d6e3;
+
+@import "~bootstrap/scss/bootstrap";
+// @import '~bootstrap/scss/_functions.scss';
+// @import '~bootstrap/scss/_variables.scss';
+// @import '~bootstrap/scss/_mixins.scss';
+// @import '~bootstrap/scss/_root.scss';
+// @import '~bootstrap/scss/_reboot.scss';
+// @import '~bootstrap/scss/_type.scss';
+// @import '~bootstrap/scss/_alert.scss';
+// @import '~bootstrap/scss/_badge';
+// @import '~bootstrap/scss/_breadcrumb';
+// @import '~bootstrap/scss/_button-group';
+// @import '~bootstrap/scss/_buttons';
+// @import '~bootstrap/scss/_buttons.scss';
+// @import '~bootstrap/scss/_card.scss';
+// @import '~bootstrap/scss/_carousel.scss';
+// @import '~bootstrap/scss/_close.scss';
+// @import '~bootstrap/scss/_code.scss';
+// @import '~bootstrap/scss/_custom-forms.scss';
+// @import '~bootstrap/scss/_dropdown.scss';
+// @import '~bootstrap/scss/_forms.scss';
+// @import '~bootstrap/scss/_grid.scss';
+// @import '~bootstrap/scss/_images.scss';
+// @import '~bootstrap/scss/_input-group.scss';
+// @import '~bootstrap/scss/_jumbotron.scss';
+// @import '~bootstrap/scss/_list-group.scss';
+// @import '~bootstrap/scss/_media.scss';
+// @import '~bootstrap/scss/_modal.scss';
+// @import '~bootstrap/scss/_nav.scss';
+// @import '~bootstrap/scss/_navbar.scss';
+// @import '~bootstrap/scss/_pagination.scss';
+// @import '~bootstrap/scss/_popover.scss';
+// @import '~bootstrap/scss/_print.scss';
+// @import '~bootstrap/scss/_progress.scss';
+// @import '~bootstrap/scss/_spinners.scss';
+// @import '~bootstrap/scss/_tables.scss';
+// @import '~bootstrap/scss/_toasts.scss';
+// @import '~bootstrap/scss/_tooltip.scss';
+// @import '~bootstrap/scss/_transitions.scss';
+// @import '~bootstrap/scss/_utilities.scss';
