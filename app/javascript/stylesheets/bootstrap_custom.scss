@@ -3,7 +3,7 @@ $theme-colors: (
   "primary": #97d6e3
 );
 
-@import "bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
 .navbar {
   background-color: $bgDefault; }

@@ -1,27 +1,23 @@
 {
-  "application.css": "/packs/css/application-c19aa53f.css",
-  "application.js": "/packs/js/application-3c5cce0d9e4882bb4437.js",
-  "application.js.map": "/packs/js/application-3c5cce0d9e4882bb4437.js.map",
-  "bootstrap_custom.js": "/packs/js/bootstrap_custom-4d4fe117fc931c5859cd.js",
-  "bootstrap_custom.js.map": "/packs/js/bootstrap_custom-4d4fe117fc931c5859cd.js.map",
+  "application.js": "/packs/js/application-f1835ae01c84bc51f0ef.js",
+  "application.js.map": "/packs/js/application-f1835ae01c84bc51f0ef.js.map",
+  "bootstrap_custom.js": "/packs/js/bootstrap_custom-8d2912b23ee416df8b0b.js",
+  "bootstrap_custom.js.map": "/packs/js/bootstrap_custom-8d2912b23ee416df8b0b.js.map",
   "entrypoints": {
     "application": {
-      "css": [
-        "/packs/css/application-c19aa53f.css"
-      ],
       "js": [
-        "/packs/js/application-3c5cce0d9e4882bb4437.js"
+        "/packs/js/application-f1835ae01c84bc51f0ef.js"
       ],
       "js.map": [
-        "/packs/js/application-3c5cce0d9e4882bb4437.js.map"
+        "/packs/js/application-f1835ae01c84bc51f0ef.js.map"
       ]
     },
     "bootstrap_custom": {
       "js": [
-        "/packs/js/bootstrap_custom-4d4fe117fc931c5859cd.js"
+        "/packs/js/bootstrap_custom-8d2912b23ee416df8b0b.js"
       ],
       "js.map": [
-        "/packs/js/bootstrap_custom-4d4fe117fc931c5859cd.js.map"
+        "/packs/js/bootstrap_custom-8d2912b23ee416df8b0b.js.map"
       ]
     }
   }
