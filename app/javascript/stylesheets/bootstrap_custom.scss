@@ -1,4 +1,4 @@
-$bgDefault      : #97d6e3;
+$bgDefault      : #63c2d4;
 $theme-colors: (
   "primary": #97d6e3
 );
@@ -38,7 +38,7 @@ $theme-colors: (
 
 .jumbotron {
   height: 600px;
-  background-image: url(/assets/image.jpg);
+  background-image: url(/assets/image3.jpg);
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,4 +55,18 @@ footer small {
 
 footer ul {
   float: right;
+}
+
+.btn-lg {
+  padding-right: 25px;
+}
+
+.footer {
+  border-top-style: solid;
+  border-color: #000;
+  margin-top: 50px;
+}
+
+tr {
+  padding-bottom: 25px;
 }
