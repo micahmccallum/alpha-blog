@@ -11,7 +11,6 @@ require("channels")
 require("bootstrap/dist/js/bootstrap")
 import './bootstrap_custom.js'
 import '../stylesheets/application.scss'
-import 'images/image3.jpg'
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
