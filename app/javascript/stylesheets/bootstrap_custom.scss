@@ -9,6 +9,9 @@ $theme-colors: (
 .navbar {
   background-color: $bgDefault; }
 
+
+
+
 #logo {
   float: left;
   font-size: 1.7em;
@@ -60,10 +63,6 @@ footer ul {
   float: right;
 }
 
-.btn-lg {
-  padding-right: 25px;
-}
-
 .footer {
   border-top-style: solid;
   border-color: #000;
@@ -102,4 +101,8 @@ tr {
   
   margin-top: 15px;
   
+  }
+
+  .alert {
+    padding-top: 1rem;
   }

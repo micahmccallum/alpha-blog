@@ -1,24 +1,24 @@
 <div class="container">
-  <div class="row">
-    <div class="col-2">
-      <%= link_to 'Edit this article', edit_article_path(@article) %>
-    </div>
+  <div class="row p-3">
+    
+    <%= link_to 'Edit article', edit_article_path(@article), class: "btn btn-outline-primary btn-sm m-2" %>
+    
      
   
-    <div class="col-1">
-    <%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %>
-    </div>
+    
+    <%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger btn-sm m-2" %>
+    
   </div>
 
 
-  <div class="row">
-    <div class="col">
+  <div class="row p-3">
+    <div class="m-2">
       Title:  <%= @article.title %>
 
     </div>
   </div>  
-  <div class="row">  
-    <div class="col">
+  <div class="row p-3">  
+    <div class="m-2">
       Description:  <%= @article.description %>
 
     </div>

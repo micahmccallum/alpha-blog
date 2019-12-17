@@ -24,9 +24,13 @@ class UsersController < ApplicationController
       redirect_to articles_path
     else
       render 'edit'
-    end  
+    end
+  end
 
-  end  
+  def show
+    @user = User.find(params[:id])
+  end
+
   private
   def user_params
     params.require(:user).permit(:username, :email, :password)
