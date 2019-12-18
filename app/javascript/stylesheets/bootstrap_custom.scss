@@ -34,7 +34,7 @@ $theme-colors: (
 }
 
 .jumbotron h1 {
-  color: #fff;
+  color: $bgDefault;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: -1px;
@@ -43,12 +43,12 @@ $theme-colors: (
 
 .jumbotron {
   height: 600px;
-  background-image: url("/assets/image3.jpg");
+  background-image: url("http://pluspng.com/img-png/wave-background-png-blue-moving-flowing-abstract-waves-on-white-background-blurred-smooth-seamless-loop-design-video-animation-1920x1080-motion-background-videoblocks-1920.png");
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px, solid, bgDefault;
+  border: 2px, solid, bgDefault;
 }
 
 .btn-xlg {
@@ -105,4 +105,8 @@ tr {
 
   .alert {
     padding-top: 1rem;
+  }
+
+  .listing {
+    list-style: none;
   }
