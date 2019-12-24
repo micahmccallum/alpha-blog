@@ -8,7 +8,10 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import '../stylesheets/application.scss'
+import '../stylesheets/application'
+require("jquery");
+require("bootstrap");
+require.context('../images/', true, /\.(gif|jpg|png|svg|eot|ttf|woff|woff2)$/i)
 // import "bootstrap"
 
 

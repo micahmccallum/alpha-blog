@@ -1,0 +1,6 @@
+<div class="row m-2">    
+  <div class="col">             
+    <%= link_to 'Edit article', edit_article_path(article), class: "btn btn-outline-primary btn-sm mr-2" %>
+    <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger btn-sm m-2" %>                 
+  </div>                         
+</div>

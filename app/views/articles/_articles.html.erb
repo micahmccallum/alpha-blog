@@ -11,21 +11,19 @@
             <div class="article-meta-details">            
               <small>Created by: <%= article.user.username %>,  
                 <%= time_ago_in_words(article.created_at) %> ago.
-                    Last updated: <%= time_ago_in_words(article.updated_at) %> ago</small>
+                    Last updated: <%= time_ago_in_words(article.updated_at) %> ago.</small>
             </div>      
           </div>            
         </div>
         <div>
-          <div class="row m-2">    
-             <div class="col">             
-                 
-                    <%= link_to 'Edit article', edit_article_path(article), class: "btn btn-outline-primary btn-sm mr-2" %>
-                 
-                 
-                    <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger btn-sm m-2" %>
-                 
-             </div>                         
-          </div>
+          <% if logged_in? && current_user == article.user %>
+            <div class="row m-2">    
+              <div class="col">             
+                <%= link_to 'Edit article', edit_article_path(article), class: "btn btn-outline-primary btn-sm mr-2" %>
+                <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger btn-sm m-2" %>    
+              </div>                         
+            </div>
+          <% end %>   
         </div>
       </div>
     <% end %>  
