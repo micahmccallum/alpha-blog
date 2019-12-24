@@ -23,7 +23,7 @@
 
 
   <div class="row p-3">
-    <% if logged_in? && current_user %>    
+    <% if logged_in? && current_user = @article.user %>    
       <%= link_to 'Edit article', edit_article_path(@article), class: "btn btn-outline-primary btn-sm m-2" %>    
       <%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger btn-sm m-2" %>
     <% end %>      

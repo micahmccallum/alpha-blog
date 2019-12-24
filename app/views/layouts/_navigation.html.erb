@@ -27,7 +27,7 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Your profile
       </a>
           <div class="dropdown-menu">
-            <%= link_to 'View your profile', users_path(current_user), class: "dropdown-item" %>
+            <%= link_to 'View your profile', user_path(current_user), class: "dropdown-item" %>
             <%= link_to 'Edit your account', edit_user_path(current_user), class: "dropdown-item" %>
             
             <%# <a class="dropdown-item" href="#">Something else here</a> %>
