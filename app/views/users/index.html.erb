@@ -12,7 +12,7 @@
 
   <% @users.each do |user| %>
     <div class="row justify-content-md-center">
-      <ul class="listing">
+      <ul class="listing center">
         <li>
           <%= link_to gravatar_for(user), user_path(user) %>      
         </li>
@@ -22,6 +22,9 @@
         <li>
           <small><%= pluralize(user.articles.count, "article") %></small>
         </li>
+        <% if logged_in? && current_user.is_admin? %>
+          <li><%= link_to 'Delete user', user_path(user), method: :delete, data: {confirm: "Are you sure?"} %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>

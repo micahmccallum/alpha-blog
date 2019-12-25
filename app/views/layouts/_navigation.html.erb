@@ -24,7 +24,7 @@
         " %>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Your profile
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Your profile <%= "Admin" if current_user.is_admin? %>
       </a>
           <div class="dropdown-menu">
             <%= link_to 'View your profile', user_path(current_user), class: "dropdown-item" %>

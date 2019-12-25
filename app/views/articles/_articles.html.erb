@@ -1,3 +1,4 @@
+ 
  <% obj.each do |article| %>
       <div class="article_container container p-3">
         <div class="row m-2">
@@ -16,7 +17,7 @@
           </div>            
         </div>
         <div>
-          <% if logged_in? && current_user == article.user %>
+          <% if logged_in? && (current_user == article.user || current_user.is_admin?) %>
             <div class="row m-2">    
               <div class="col">             
                 <%= link_to 'Edit article', edit_article_path(article), class: "btn btn-outline-primary btn-sm mr-2" %>
