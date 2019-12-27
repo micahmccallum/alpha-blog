@@ -12,23 +12,20 @@
     </div>
   </div>
   <div class="row p-3">
+
     <% if logged_in? && (current_user == @article.user || current_user.is_admin?) %>    
       <%= link_to 'Edit article', edit_article_path(@article), class: "btn btn-outline-primary btn-sm m-2" %>    
       <%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger btn-sm m-2" %>
     <% else %>
-
-    <div class="col">
-            
+    <div class="col">            
             <div class="article-meta-details">            
               <small>Created by: <%= @article.user.username %>,  
                 <%= time_ago_in_words(@article.created_at) %> ago.
                     Last updated: <%= time_ago_in_words(@article.updated_at) %> ago.</small>
             </div>      
-          </div>  
-
-
-
-    <% end %>      
+          </div>
+    <% end %>
+          
   </div>
 </div>
 

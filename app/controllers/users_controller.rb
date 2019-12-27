@@ -21,16 +21,11 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit
-
-    
+  def edit    
     
   end
 
-  def update
-
-   
-    
+  def update    
     if @user.update(user_params)
       flash[:success] = "You have successfully updated your account"
       redirect_to user_path(@user)
@@ -69,6 +64,4 @@ class UsersController < ApplicationController
       redirect_to root_path
     end
   end
-
-
 end
