@@ -15,11 +15,20 @@
       </div>
     </div>
     <div class="form-group row m-2">       
+      <div class="col offset-md-2">
+        <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+        <% cb.label(class: "checkbox-inline") {cb.check_box(class: "checkbox") + " " + cb.text} %>
+        <% end %>
+      </div>
+    </div>
+    <div class="form-group row m-2">       
       <div class="col-md-2 offset-md-2">
         <%= f.submit "Save article", class: "btn btn-outline-primary btn-sm mt-2" %>
       </div>
     </div>
   </div>
 <% end %>
+
+
 
 

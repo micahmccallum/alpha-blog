@@ -1,0 +1,21 @@
+<div class="container p-3">
+  <div class="row m-2">    
+    <div class="col center">
+      <h1>Category: <%= @category.name %></h1>
+    </div>
+  </div>
+
+  <div class="row justify-content-md-center">      
+      <%= will_paginate @category_articles %>     
+  </div> 
+    
+  <%= render 'articles/articles', obj: @category_articles %>
+  
+  <div class="row justify-content-md-center">      
+      <%= will_paginate @category_articles %>     
+  </div>
+
+
+
+</div>
+

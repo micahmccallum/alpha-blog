@@ -16,9 +16,16 @@
             </div>      
           </div>            
         </div>
+        <div class="row ml-2">
+          <div class="col">
+            <% if article.categories %>
+              <p class="category_listing">Categories: <%= render article.categories %></p>
+            <% end %>
+          </div>  
+        </div>
         <div>
           <% if logged_in? && (current_user == article.user || current_user.is_admin?) %>
-            <div class="row m-2">    
+            <div class="row ml-2">    
               <div class="col">             
                 <%= link_to 'Edit article', edit_article_path(article), class: "btn btn-outline-primary btn-sm mr-2" %>
                 <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger btn-sm m-2" %>    
