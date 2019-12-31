@@ -2,8 +2,13 @@
   <div class="row m-2">    
     <div class="col center">
       <h1>Category: <%= @category.name %></h1>
+      <% if logged_in? && current_user.is_admin? %>
+        <span><small class="badge"><%= link_to "Edit category name", edit_category_path(@category) %></small></span>
+      <% end %>
     </div>
   </div>
+
+  
 
   <div class="row justify-content-md-center">      
       <%= will_paginate @category_articles %>     
