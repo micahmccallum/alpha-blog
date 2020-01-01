@@ -14,6 +14,6 @@ class UserSignupTest < ActionDispatch::IntegrationTest
     assert_equal session[:user_id], user.id
     assert_template 'users/show'
     assert_response :success
-    assert_select "h4", text: "bob's articles"
+    assert_select "h4", text: "#{user.username}'s articles"
   end
 end
